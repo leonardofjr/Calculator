@@ -6,6 +6,7 @@ $.fn.calculatorPlugin = function() {
 
 			init: function() {
 				this.cacheDom();
+				this.bindEvents();
 			},
 
 			cacheDom: function() {
@@ -28,6 +29,119 @@ $.fn.calculatorPlugin = function() {
 				this.$buttonDivide = this.$el.find('#divide')
 				this.$buttonCalculate = this.$el.find('#calculate')
 			},
+
+			bindEvents: function() {
+				this.$button0.on('click', this.button0.bind(this));
+				this.$button1.on('click', this.button1.bind(this));
+				this.$button2.on('click', this.button2.bind(this));
+				this.$button3.on('click', this.button3.bind(this));
+				this.$button4.on('click', this.button4.bind(this));
+				this.$button5.on('click', this.button5.bind(this));
+				this.$button6.on('click', this.button6.bind(this));
+				this.$button7.on('click', this.button7.bind(this));
+				this.$button8.on('click', this.button8.bind(this));
+				this.$button9.on('click', this.button9.bind(this));
+				this.$buttonDecimal.on('click', this.buttonDecimal.bind(this));
+				this.$buttonAdd.on('click', this.buttonAdd.bind(this));
+				this.$buttonMultiply.on('click', this.buttonMultiply.bind(this));
+				this.$buttonSubtract.on('click', this.buttonSubtract.bind(this));
+				this.$buttonDivide.on('click', this.buttonDivide.bind(this));
+				this.$buttonCalculate.on('click', this.calculate.bind(this));
+				
+			},
+
+			button0: function() {
+				this.input += 0;
+				this.render();
+				
+			},
+
+			button1: function() {
+				this.input += 1;
+				this.render();
+			},
+
+
+			button2: function() {
+				this.input += 2;
+				this.render();
+			},
+
+
+			button3: function() {
+				this.input += 3;
+				this.render();
+			},
+
+			button4: function() {
+				this.input += 4;
+				this.render();
+				
+			},
+
+			button5: function() {
+				this.input += 5;
+				this.render();
+			},
+
+
+			button6: function() {
+				this.input += 6;
+				this.render();
+			},
+
+
+			button7: function() {
+				this.input += 7;
+				this.render();
+			},
+
+			button8: function() {
+				this.input += 8;
+				this.render();
+			},
+
+
+			button9: function() {
+				this.input += 9;
+				this.render();
+			},
+
+			buttonDecimal: function() {
+				this.input += '.';
+				this.render();
+			},
+
+			buttonAdd: function() {
+				this.input += '+';
+				this.render();
+			},
+
+			buttonMultiply: function() {
+				this.input += '*';
+				this.render();
+			},
+
+			buttonSubtract: function() {
+				this.input += '-';
+				this.render();
+			},
+
+			buttonDivide: function() {
+				this.input += '/';
+				this.render();
+			},
+
+	
+			render: function() {
+				this.$userInput.val(this.input);
+			},
+
+			calculate: function() {
+				this.input = eval(this.input);
+				this.render();
+
+			}
 
 		}
 		calculator.init();
