@@ -25,3 +25,23 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+#calculator {
+	width: 400px;
+}
+#calculator button {
+	list-style: none;
+	display: block;
+	float: left;
+	height: 80px;
+	margin: 4px;
+	width: 80px;
+	background-color: #ccc;
+
+}
+#user-input {
+	width: 354px;
+	height: 60px;
+	font-size: 40px;
+	text-align: right;
+}
