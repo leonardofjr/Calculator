@@ -1,12 +1,13 @@
 $.fn.calculatorPlugin = function() {
 
 	var calculator = {
-			input: '',
+			input: 0,
 
 
 			init: function() {
 				this.cacheDom();
 				this.bindEvents();
+				this.render();
 			},
 
 			cacheDom: function() {
@@ -22,6 +23,8 @@ $.fn.calculatorPlugin = function() {
 				this.$button7 = this.$el.find('#7')
 				this.$button8 = this.$el.find('#8')
 				this.$button9 = this.$el.find('#9')
+				this.$buttonC = this.$el.find('#c')
+				this.$buttonCE = this.$el.find('#ce')
 				this.$buttonDecimal = this.$el.find('#decimal')
 				this.$buttonAdd = this.$el.find('#add')
 				this.$buttonSubtract = this.$el.find('#subtract')
@@ -41,6 +44,8 @@ $.fn.calculatorPlugin = function() {
 				this.$button7.on('click', this.button7.bind(this));
 				this.$button8.on('click', this.button8.bind(this));
 				this.$button9.on('click', this.button9.bind(this));
+				this.$buttonC.on('click', this.buttonC.bind(this));
+				this.$buttonCE.on('click', this.buttonCE.bind(this));
 				this.$buttonDecimal.on('click', this.buttonDecimal.bind(this));
 				this.$buttonAdd.on('click', this.buttonAdd.bind(this));
 				this.$buttonMultiply.on('click', this.buttonMultiply.bind(this));
@@ -104,6 +109,16 @@ $.fn.calculatorPlugin = function() {
 
 			button9: function() {
 				this.input += 9;
+				this.render();
+			},
+
+			buttonC: function() {
+				this.input = 0;
+				this.render();
+			},
+
+			buttonCE: function() {
+				this.input = this.input.toString().substring(0, this.input.length -1);
 				this.render();
 			},
 

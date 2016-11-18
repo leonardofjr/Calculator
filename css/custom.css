@@ -29,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
 #calculator {
 	width: 400px;
 }
+
+
 #calculator button {
 	list-style: none;
 	display: block;
@@ -38,7 +40,24 @@ footer, header, hgroup, menu, nav, section {
 	width: 80px;
 	background-color: #ccc;
 
+
 }
+
+
+#calculator #c {
+	height: 80px;
+	margin: 4px;
+	width: 168px;
+	background-color: #ccc;
+}
+
+#calculator #ce {
+	height: 80px;
+	margin: 4px;
+	width: 168px;
+	background-color: #ccc;
+}
+
 #user-input {
 	width: 354px;
 	height: 60px;
