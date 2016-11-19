@@ -113,8 +113,9 @@ $.fn.calculatorPlugin = function() {
 			},
 
 			buttonC: function() {
-				this.input = '0';
+				this.input = '';
 				this.render();
+
 			},
 
 			buttonCE: function() {

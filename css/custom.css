@@ -26,41 +26,65 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-#calculator {
-	width: 400px;
+.container {
+		
+		
+
 }
+
+#calculator {
+	background: #056665;
+	width: 370px;
+	padding: 25px;
+	margin: auto;
+	border-radius: 25px;
+}
+
 
 
 #calculator button {
 	list-style: none;
-	display: block;
-	float: left;
+	display: inline-block;
+	border-radius: 15px;
+	border: 0;
 	height: 80px;
 	margin: 4px;
 	width: 80px;
-	background-color: #ccc;
 
 
 }
 
 
-#calculator #c {
+
+#calculator #c, #calculator #ce {
 	height: 80px;
-	margin: 4px;
-	width: 168px;
-	background-color: #ccc;
+	margin: 20px 4px;
+	width: 172px;
+	color: #fff;
+	background-color: #067F7E;
 }
 
-#calculator #ce {
-	height: 80px;
-	margin: 4px;
-	width: 168px;
-	background-color: #ccc;
-}
+
 
 #user-input {
 	width: 354px;
 	height: 60px;
 	font-size: 40px;
 	text-align: right;
+	margin: 15px 0	;
+	border: 2px solid #0BCCCA;
+	color:#03403F;
+	background-color: #FF9E08;
+}
+.arithmetic-operations {
+	background-color: #0BCCCA;
+	color: #fff;
+}
+.digits {
+	background-color: #03403F;
+	color: #fff;
+}
+#calculate {
+	background-color: #FF9E08;
+	color: #fff;
 }
