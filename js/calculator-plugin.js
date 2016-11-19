@@ -1,7 +1,7 @@
 $.fn.calculatorPlugin = function() {
 
 	var calculator = {
-			input: 0,
+			input: '',
 
 
 			init: function() {
@@ -56,64 +56,64 @@ $.fn.calculatorPlugin = function() {
 			},
 
 			button0: function() {
-				this.input += 0;
+				this.input += '0';
 				this.render();
 				
 			},
 
 			button1: function() {
-				this.input += 1;
+				this.input += '1';
 				this.render();
 			},
 
 
 			button2: function() {
-				this.input += 2;
+				this.input += '2';
 				this.render();
 			},
 
 
 			button3: function() {
-				this.input += 3;
+				this.input += '3';
 				this.render();
 			},
 
 			button4: function() {
-				this.input += 4;
+				this.input += '4';
 				this.render();
 				
 			},
 
 			button5: function() {
-				this.input += 5;
+				this.input += '5';
 				this.render();
 			},
 
 
 			button6: function() {
-				this.input += 6;
+				this.input += '6';
 				this.render();
 			},
 
 
 			button7: function() {
-				this.input += 7;
+				this.input += '7';
 				this.render();
 			},
 
 			button8: function() {
-				this.input += 8;
+				this.input += '8';
 				this.render();
 			},
 
 
 			button9: function() {
-				this.input += 9;
+				this.input += '9';
 				this.render();
 			},
 
 			buttonC: function() {
-				this.input = 0;
+				this.input = '0';
 				this.render();
 			},
 
@@ -155,6 +155,7 @@ $.fn.calculatorPlugin = function() {
 			calculate: function() {
 				this.input = eval(this.input);
 				this.render();
+				this.input = '';
 
 			}
 
