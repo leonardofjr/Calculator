@@ -1,44 +1,64 @@
-<!DOCTYPE>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-	<title>Calculator Plugin</title>
-</head>
-<!-- Custom CSS File -->
-<link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-	<div class="container">
-	<div id="calculator">
-				<input type="input" id="user-input" disabled>
-				<button id="c">C</button>
-				<button id="ce">CE</button>
-				<button class="digits" id="7">7</button>
-				<button class="digits" id="8">8</button>
-				<button class="digits" id="9">9</button>
-				<button class="arithmetic-operations" id="divide">/</button>
-				<button class="digits" id="4">4</button>
-				<button class="digits" id="5">5</button>
-				<button class="digits" id="6">6</button>
-				<button class="arithmetic-operations" id="multiply">*</button>
-				<button class="digits" id="1">1</button>
-				<button class="digits" id="2">2</button>
-				<button class="digits" id="3">3</button>
-				<button class="arithmetic-operations" id="subtract">-</button>
-				<button class="digits" id="decimal">.</button>
-				<button class="digits" id="0">0</button>
-				<button id="calculate">=</button>
-				<button class="arithmetic-operations" id="add">+</button>
-		</div>
-	</div>
-	</body>
-	<!-- JQuery Framework -->
+<!DocType html >
+
+<html>
+
+	<title>Felipa's Calculator.</title>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Test site for my calculator.">
+ 	<meta name="keywords" content="jquery,calcualtor">
+	<meta name="author" content="James McCarthy">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
 	<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-	<!-- Custom JS file -->
-	<script src="js/calculator-plugin.js"></script>
-	<script src="js/main.js"></script>
+  		src="https://code.jquery.com/jquery-2.2.4.min.js"
+  		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  		crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Add your calculator scripts here. -->
+	<script src="js/calculator.js"></script>	
+	<link rel="stylesheet" href="css/calculator.css" />
+
+	<!-- Do the actual work -->
+	<script>
+
+		// Creat three calculators initally to ensure that our plugins are independent.
+		$(function(){ 
+
+			$('#felipa_calculator').felipa_calculator();
+
+
+
+		});
+
+	</script>
+
+<head>
+
+</head>
+
+<body>
+
+	<!-- Container for all the calculators.-->
+	<div class='container'>
+
+		<div class='row'>
+			<div id='felipa_calculator' class="col-sm-4"></div>
+		</div>	
+
+
+	</div>
+</body>
 
 </html>

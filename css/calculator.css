@@ -32,49 +32,57 @@ footer, header, hgroup, menu, nav, section {
 
 }
 
-#calculator {
+#felipa_calculator #container {
 	background: #056665;
-	width: 370px;
-	padding: 25px;
+	width: 100%;
 	margin: auto;
-	border-radius: 25px;
+	max-width: 380px;
+	min-width: 370px;
+	padding: 25px;
 }
 
 
-
-#calculator button {
-	list-style: none;
-	display: inline-block;
+span {
+	color: #fff;
+}
+#felipa_calculator #container button {
 	border-radius: 15px;
-	border: 0;
+	border: 1px solid #000;
 	height: 80px;
-	margin: 4px;
-	width: 80px;
+	margin: 1%;
+	width: 23%;
+}
 
-
+.keyboardSwitchContainer {
+	margin: 0 0 4% 0;
 }
 
 
-
-#calculator #c, #calculator #ce {
+#felipa_calculator #container #c, #felipa_calculator #container #ce {
 	height: 80px;
-	margin: 20px 4px;
-	width: 172px;
+	margin: 1%;
+	width: 48%;
 	color: #fff;
 	background-color: #067F7E;
 }
 
-
+#felipa_calculator button#keydownSwitch {
+	width: 73%;
+	background-color: #03403F;
+	color: #fff;
+}
 
 #user-input {
-	width: 354px;
-	height: 60px;
-	font-size: 40px;
+	display: block;
+	height: 80px;
+	width: 100%;
+	font-size: 2em;
 	text-align: right;
-	margin: 15px 0	;
+	margin: 0 0 4%;
+	padding-right: 2%;
 	border: 2px solid #0BCCCA;
 	color:#03403F;
-	background-color: #FF9E08;
+	background-color: #D1E594;
 }
 .arithmetic-operations {
 	background-color: #0BCCCA;
