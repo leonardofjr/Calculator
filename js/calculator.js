@@ -6,43 +6,49 @@
 		/*** html will be rendered by the init() function ***/
 		
 			const html = '\
-			<div id="container">\
-				<div class="row">\
-				<input type="input" id="user-input" disabled>\
+			<div class="row">\
+				<div class="col-sm-8">\
+					<div class="row">\
+					<input type="input" id="user-input" disabled>\
+					</div>\
+					<div class="row">\
+						<button class="col-xs-3 col-sm-6" data-func="clear" id="c">C</button>\
+						<button class="col-xs-3 col-sm-6" data-func="backspace" id="ce">CE</button>\
+					</div>\
+					<div class="row">\
+						<button class="col-xs-9 col-sm-9" data-func="keyboard" id="keydownSwitch">Keyboard Is Off<small><br>Press Space</small></button>\
+						<button class="arithmetic-operations col-xs-3 col-sm-3" data-operator="%">%</button>\
+					</div>\
+					<div class="row">\
+						<button class="digits col-xs-3 col-sm-3" data-digit="7">7</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="8">8</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="9">9</button>\
+						<button class="arithmetic-operations col-sm-3" data-operator="/" id="divide">/</button>\
+					</div>\
+					<div class="row">\
+						<button class="digits col-xs-3 col-sm-3" data-digit="4">4</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="5">5</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="6">6</button>\
+						<button class="arithmetic-operations col-sm-3" data-operator="*" id="multiply">*</button>\
+					</div>\
+					<div class="row">\
+						<button class="digits col-xs-3 col-sm-3" data-digit="1">1</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="2">2</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="3">3</button>\
+						<button class="arithmetic-operations col-sm-3" data-operator="-" id="subtract">-</button>\
+					</div>\
+					<div class="row">\
+						<button class="digits col-xs-3 col-sm-3" data-decimal="." id="decimal">.</button>\
+						<button class="digits col-xs-3 col-sm-3" data-digit="0">0</button>\
+						<button class="col-xs-3 col-sm-3" id="calculate" data-calc="=">=</button>\
+						<button class="arithmetic-operations col-xs-3 col-sm-3" data-operator="+" id="add">+</button>\
+					</div>\
 				</div>\
-				<div class="row">\
-					<button class="col-xs-3 col-sm-6" data-func="clear" id="c">C</button>\
-					<button class="col-xs-3 col-sm-6" data-func="backspace" id="ce">CE</button>\
+				<div class="col-sm-4"> \
+					<h2>Project Description</h2>\
+					<p>This is a project that I developed utilizing HTML, CSS3, Javascript and Jquery</p>\
 				</div>\
-				<div class="row">\
-					<button class="col-xs-9 col-sm-9" data-func="keyboard" id="keydownSwitch">Keyboard Is Off<small><br>Press Space</small></button>\
-					<button class="arithmetic-operations col-xs-3 col-sm-3" data-operator="%">%</button>\
-				</div>\
-				<div class="row">\
-					<button class="digits col-xs-3 col-sm-3" data-digit="7">7</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="8">8</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="9">9</button>\
-					<button class="arithmetic-operations col-sm-3" data-operator="/" id="divide">/</button>\
-				</div>\
-				<div class="row">\
-					<button class="digits col-xs-3 col-sm-3" data-digit="4">4</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="5">5</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="6">6</button>\
-					<button class="arithmetic-operations col-sm-3" data-operator="*" id="multiply">*</button>\
-				</div>\
-				<div class="row">\
-					<button class="digits col-xs-3 col-sm-3" data-digit="1">1</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="2">2</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="3">3</button>\
-					<button class="arithmetic-operations col-sm-3" data-operator="-" id="subtract">-</button>\
-				</div>\
-				<div class="row">\
-					<button class="digits col-xs-3 col-sm-3" data-decimal="." id="decimal">.</button>\
-					<button class="digits col-xs-3 col-sm-3" data-digit="0">0</button>\
-					<button class="col-xs-3 col-sm-3" id="calculate" data-calc="=">=</button>\
-					<button class="arithmetic-operations col-xs-3 col-sm-3" data-operator="+" id="add">+</button>\
-				</div>\
-			</div>';
+				</div>';
 
 		const container = $(this);
 		let input = "";
