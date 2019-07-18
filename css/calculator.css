@@ -26,17 +26,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-.container {
-		
-		
 
-}
-
-#felipa_calculator #container {
+#felipa_calculator  {
 	background: #056665;
 	width: 100%;
 	margin: auto;
-	max-width: 380px;
 	min-width: 370px;
 	padding: 25px;
 }
@@ -45,12 +39,11 @@ footer, header, hgroup, menu, nav, section {
 span {
 	color: #fff;
 }
-#felipa_calculator #container button {
+#felipa_calculator  button {
 	border-radius: 15px;
 	border: 1px solid #000;
 	height: 80px;
-	margin: 1%;
-	width: 23%;
+
 }
 
 .keyboardSwitchContainer {
@@ -58,9 +51,8 @@ span {
 }
 
 
-#felipa_calculator #container #c, #felipa_calculator #container #ce {
+#felipa_calculator  #c, #felipa_calculator  #ce {
 	height: 80px;
-	margin: 1%;
 	width: 48%;
 	color: #fff;
 	background-color: #067F7E;
@@ -78,8 +70,6 @@ span {
 	width: 100%;
 	font-size: 2em;
 	text-align: right;
-	margin: 0 0 4%;
-	padding-right: 2%;
 	border: 2px solid #0BCCCA;
 	color:#03403F;
 	background-color: #D1E594;
