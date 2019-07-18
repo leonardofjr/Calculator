@@ -27,29 +27,61 @@
 								<button class="arithmetic-operations btn btn-block" data-operator="%">%</button>\
 							</div>\
 						</div>\
-						<div class="row">\
-							<button class="digits col-3 col-sm-3" data-digit="7">7</button>\
-							<button class="digits col-3 col-sm-3" data-digit="8">8</button>\
-							<button class="digits col-3 col-sm-3" data-digit="9">9</button>\
-							<button class="arithmetic-operations col-sm-3" data-operator="/" id="divide">/</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="7">7</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="8">8</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="9">9</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="arithmetic-operations btn btn-block" data-operator="/" id="divide">/</button>\
+							</div>\
 						</div>\
-						<div class="row">\
-							<button class="digits col-3 col-sm-3" data-digit="4">4</button>\
-							<button class="digits col-3 col-sm-3" data-digit="5">5</button>\
-							<button class="digits col-3 col-sm-3" data-digit="6">6</button>\
-							<button class="arithmetic-operations col-sm-3" data-operator="*" id="multiply">*</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="4">4</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="5">5</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="6">6</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="arithmetic-operations btn btn-block" data-operator="*" id="multiply">*</button>\
+							</div>\
 						</div>\
-						<div class="row">\
-							<button class="digits col-3 col-sm-3" data-digit="1">1</button>\
-							<button class="digits col-3 col-sm-3" data-digit="2">2</button>\
-							<button class="digits col-3 col-sm-3" data-digit="3">3</button>\
-							<button class="arithmetic-operations col-sm-3" data-operator="-" id="subtract">-</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="1">1</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="2">2</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="3">3</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="arithmetic-operations btn btn-block" data-operator="-" id="subtract">-</button>\
+							</div>\
 						</div>\
-						<div class="row">\
-							<button class="digits col-3 col-sm-3" data-decimal="." id="decimal">.</button>\
-							<button class="digits col-3 col-sm-3" data-digit="0">0</button>\
-							<button class="col-3 col-sm-3" id="calculate" data-calc="=">=</button>\
-							<button class="arithmetic-operations col-3 col-sm-3" data-operator="+" id="add">+</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-decimal=".">.</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-digit="0">0</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block digits" data-calc="=" id="calculate">=</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="arithmetic-operations btn btn-block" data-operator="+" id="add">+</button>\
+							</div>\
 						</div>\
 						</div>';
 
