@@ -6,16 +6,26 @@
 		/*** html will be rendered by the init() function ***/
 		
 			const html = '\
-						<div class="row">\
-						<input type="input" id="user-input" disabled>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<input type="input" id="user-input" disabled>\
+							</div>\
 						</div>\
-						<div class="row">\
-							<button class="col-3 col-sm-6" data-func="clear" id="c">C</button>\
-							<button class="col-3 col-sm-6" data-func="backspace" id="ce">CE</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block" data-func="clear" id="c">C</button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block" data-func="backspace" id="ce">CE</button>\
+							</div>\
 						</div>\
-						<div class="row">\
-							<button class="col-9 col-sm-9" data-func="keyboard" id="keydownSwitch">Keyboard Is Off<small><br>Press Space</small></button>\
-							<button class="arithmetic-operations col-3 col-sm-3" data-operator="%">%</button>\
+						<div class="d-flex flex-row">\
+							<div class="flex-fill p-1">\
+								<button class="btn btn-block" data-func="keyboard" id="keydownSwitch">Keyboard Is Off<small><br>Press Space</small></button>\
+							</div>\
+							<div class="flex-fill p-1">\
+								<button class="arithmetic-operations btn btn-block" data-operator="%">%</button>\
+							</div>\
 						</div>\
 						<div class="row">\
 							<button class="digits col-3 col-sm-3" data-digit="7">7</button>\

@@ -26,6 +26,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+body {
+		background: #fffcf7;
+
+}
 
 #felipa_calculator  {
 	background: #056665;
@@ -46,20 +50,15 @@ span {
 
 }
 
-.keyboardSwitchContainer {
-	margin: 0 0 4% 0;
-}
-
 
 #felipa_calculator  #c, #felipa_calculator  #ce {
 	height: 80px;
-	width: 48%;
+
 	color: #fff;
 	background-color: #067F7E;
 }
 
 #felipa_calculator button#keydownSwitch {
-	width: 73%;
 	background-color: #03403F;
 	color: #fff;
 }
